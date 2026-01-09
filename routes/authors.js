@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Author = require('../models/author')
 
-// Al Authors route
+// All authors route
 router.get('/', async (req, res) =>{
     let searchOptions = {}
     if (req.query.name != null && req.query.name !== '') {
@@ -19,12 +19,12 @@ router.get('/', async (req, res) =>{
     }
 })
 
-// New Author route
+// New author route
 router.get('/new', (req, res) => {
     res.render('authors/new', { author: new Author() })
 })
 
-// Create Author route
+// Create author route
 router.post('/', async (req, res) => {
     const author = new Author({
         name: req.body.name
