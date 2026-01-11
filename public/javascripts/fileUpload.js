@@ -5,7 +5,7 @@ FilePond.registerPlugin(
 )
 
 FilePond.setOptions({
-    // Dimensions already defined on the books/index.ejs
+    // Dimensions already defined on books/index.ejs
     stylePanelAspectRatio: 150 / 100,
     imageResizeTargetWidth: 100,
     imageResizeTargetHeight: 150
